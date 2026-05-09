@@ -1,0 +1,24 @@
+{
+  "hosting": {
+    "site": "dsaipranav-portfolio",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "headers": [
+      {
+        "source": "**/*.pdf",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/pdf"
+          }
+        ]
+      }
+    ]
+  }
+}

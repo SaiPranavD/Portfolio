@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" role="img" aria-labelledby="title desc">
+  <title id="title">Profile placeholder</title>
+  <desc id="desc">Illustrated placeholder for a portfolio profile image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6d3b8"/>
+      <stop offset="100%" stop-color="#df7a4f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="900" rx="48" fill="url(#bg)"/>
+  <circle cx="400" cy="320" r="135" fill="#fff3e6" opacity="0.95"/>
+  <path d="M190 770c28-140 122-224 210-224s182 84 210 224" fill="#fff3e6" opacity="0.95"/>
+  <circle cx="640" cy="170" r="62" fill="#fff3e6" opacity="0.25"/>
+  <circle cx="170" cy="180" r="44" fill="#fff3e6" opacity="0.2"/>
+  <text x="400" y="845" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#fff8f1">Your Photo</text>
+</svg>
