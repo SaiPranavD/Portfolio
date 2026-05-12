@@ -1,0 +1,187 @@
+:root {
+  --paper: #ffffff;
+  --ink: #111111;
+  --muted: #333333;
+  --line: #cfcfcf;
+}
+
+@page {
+  size: A4;
+  margin: 0.5in;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Georgia, serif;
+  background: #ececec;
+  color: var(--ink);
+  padding: 2rem 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.resume-shell {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-page {
+  width: min(850px, 100%);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 0;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  padding: 2.25rem 2.5rem;
+}
+
+.resume-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: end;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line);
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.role {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.download-link {
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--line);
+  background: #f7f7f7;
+  font-size: 0.92rem;
+}
+
+.resume-section {
+  padding-top: 1rem;
+}
+
+.resume-section h2 {
+  font-size: 0.98rem;
+  margin-bottom: 0.55rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--line);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.resume-section p,
+.resume-section li {
+  color: var(--muted);
+  line-height: 1.45;
+  font-size: 0.98rem;
+}
+
+.compact {
+  padding-top: 0.7rem;
+}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.resume-item + .resume-item {
+  margin-top: 0.9rem;
+}
+
+.item-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.15rem;
+  align-items: baseline;
+}
+
+.item-head h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.item-head span {
+  color: var(--muted);
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+ul {
+  padding-left: 1.1rem;
+}
+
+@media (max-width: 720px) {
+  .resume-page {
+    padding: 1.5rem;
+  }
+
+  .resume-header,
+  .item-head {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .download-link {
+    width: fit-content;
+  }
+
+  .contact-section span {
+    display: none;
+  }
+}
+
+@media print {
+  html,
+  body {
+    background: #fff;
+    padding: 0;
+  }
+
+  body {
+    font-size: 11pt;
+  }
+
+  .resume-page {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .resume-section {
+    padding-top: 0.75rem;
+  }
+
+  .resume-section h2 {
+    margin-bottom: 0.35rem;
+  }
+
+  .resume-item + .resume-item {
+    margin-top: 0.7rem;
+  }
+
+  .download-link {
+    display: none;
+  }
+}
